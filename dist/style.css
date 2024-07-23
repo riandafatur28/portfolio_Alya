@@ -1,0 +1,58 @@
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50px;
+}
+.timeline-panel {
+  margin-left: 130px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.timeline-heading h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+.timeline-heading span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+.timeline-body p {
+  margin: 0;
+  color: #555;
+}
+.timeline-inverted .timeline-panel {
+  margin-left: 0;
+  margin-right: 130px;
+}
